@@ -4,21 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
-  <h1>MEDPL 150 Homework</h1>
+  
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+ <a href="homework2.html">Homework 2 </a>
+ <a href="homework3.html">Homework 3 </a>
+ <a href="homework4.html">Homework 4 </a>
+ <a href="homework5.html">Homework 5 </a>
+ <a href="homework6.html">Homework 6 </p>
+ <a href="homework7.html"> Homework 7 </a>
+ <a href="homework8.html"> Homework 8  </a>
+ <a href="oralpresentation.html"> oral presenation  </a>
+ <a href="index.html">Back to Home</a>
+</div>
 
-  <p>Weekly Homework and Reflections</p>
-
-<p><a href="homework2.html">Homework 2 – Cropping & Tonal Range</p>
-<p><a href="homework3.html">Homework 3 – shallow and deep image</p>
-<p><a href="homework4.html">Homework 4 – Photomontages</p>
-<p><a href="homework5.html">Homework 5 – Photomontages and design</p>
-<p><a href="homework6.html">Homework 6 – Create Eyes With Color, Pattern & Illustration</p>
-<p><a href="homework7.html"> Homework 7 - Illustrated Environment</a>
-<p><a href="homework8.html"> Homework 8 - Animated GIFs </a>
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+  
+</div>
 
 
-  <p><a href="index.html">Back to Home</a></p>
+ <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+<h1>MEDPL 150 Homework</h1>
+
+  <h2>Weekly Homework and Reflections</h2>
+
+  <P>Homework 2 – Cropping & Tonal Range</P>
+ <p>Homework 3 – shallow and deep image</p>
+ <p>Homework 4 – Photomontages</p>
+ <p>Homework 5 – Photomontages and design</p>
+ <p> Homework 6 – Create Eyes With Color, Pattern & Illustration</p>
+ <p> Homework 7 - Illustrated Environment</p>
+ <p> Homework 8 - Animated GIFs </p>
+ <p> oral presenation  </p>
+
 </body>
 </html>
