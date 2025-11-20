@@ -2,14 +2,39 @@
     <html lang = en>
     <head>
         <title> Google Slides</title>
+        <link rel="stylesheet" href="design.css">
     </head>
     <body>
+      <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> X </a>
+  <a href="index.html">Home</a>
+  <a href="readings.html">Readings</a>
+  <a href="homework.html">Homework</a>
+  <a href="extra.html">Extra Credit</a>
+
+  <div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+</div>  
+
+
+  <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+  
+</div>
         <h1>My Presentation</h1>
         
         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSqrXSpJsvqHrw17iOR_rIpjztTaZ1prx-B12Nnx_qtDrfp0naIsskyhOrdm04hNhWTBdBb2ckdCAlj/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
   
-  <p><a href="homework.html">Back to Homework </a></p>
-  <p><a href="index.html">Back to Home</a></p>
+  
 </body>
 </html>
